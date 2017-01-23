@@ -4,11 +4,11 @@ section.main
 		.container
 			img(src="/img/logo.png" alt="Логотип")
 			ul
-				li Тел. 8-926-186-98-89
-				li Время для звонков: с 12 до 20ч
-				li Дни недели: вторник\четверг\суббота
+				li <span class="bold">Телефон:</span> 8-926-186-98-89
+				li <span class="bold">Время для звонков:</span> с 12 до 20ч
+				li <span class="bold">Дни недели:</span> вторник\четверг\суббота
 			.clf
-	.container
+	.main_container
 		hgroup
 			h1 Прогнозирование и нахождение прибыльных стратегий для вашего дела
 			h2 Вводная индивидуальная консультация без оплаты
@@ -18,11 +18,12 @@ section.main
 				li Вы примите однозначное и точное решение  по актуальной для вас теме 
 				li Увидите\услышите\почувствуете (узнаете) 
 		.right
-			h3 Плюшка, чтоб охотней вводили контакты
-			form
-				input(type="text" name="name" placeholder="Введите Ваше имя" required) 
-				input(type="email" name="mail" placeholder="Введите Ваш e-mail" required) 
-				input(type="text" name="skype" placeholder="Введите Ваш Skype" required) 
-				input(type="submit" name="submit" value="Пройти консультацию")
+			.right_container
+				h4 Плюшка, чтоб охотней вводили контакты
+				form(action="" method="POST")
+					input(type="text" name="name" placeholder="Введите Ваше имя" required) 
+					input(type="email" name="mail" placeholder="Введите Ваш e-mail" required) 
+					input(type="text" name="skype" placeholder="Введите Ваш Skype" required) 
+					input(type="submit" name="submit" value="Пройти консультацию")
 		.clf
 // Конец главного экрана

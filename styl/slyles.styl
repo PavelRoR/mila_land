@@ -1,4 +1,17 @@
-@include fonts
+@font-face
+    font-family 'RobotoLight'
+    src url(/fonts/Roboto/RobotoLight.eot)
+    src url(/fonts/Roboto/RobotoLight.svg)
+    src url(/fonts/Roboto/RobotoLight.ttf)
+    src url(/fonts/Roboto/RobotoLight.woff)
+    src url(/fonts/Roboto/RobotoLight.woff2)
+@font-face 
+    font-family 'SegoeBlack'
+    src url(/fonts/SegoeBlack/SegoeBlack.eot)
+    src url(/fonts/SegoeBlack/SegoeBlack.svg)
+    src url(/fonts/SegoeBlack/SegoeBlack.ttf)
+    src url(/fonts/SegoeBlack/SegoeBlack.woff)
+    src url(/fonts/SegoeBlack/SegoeBlack.woff2)
 
 html
 body
@@ -43,9 +56,10 @@ section
 
 
 body 
-    font-family 'Open Sans' san-serif
+    font-family 'RobotoLight', san-serif
     line-height 1
 	-webkit-text-size-adjust none
+    font-size 18px
     
 
 *
@@ -59,3 +73,146 @@ body
 *before
 *after 
     content ''
+
+hgroup
+h3
+h4 
+    font-family 'SegoeBlack', san-serif
+    text-align center
+    
+.container
+.main_container
+    max-width 960px
+    min-width 280px
+    margin 10px auto
+
+.clf
+    clear both
+
+li
+    list-style none
+
+.second
+.third
+.fourth
+    margin 40px 0
+
+.button
+    display block
+    margin 30px auto 20px
+// Стили Main
+.header
+    .container
+        img
+            float left
+            max-height 59px
+            max-width 195px
+        ul
+            float right
+            li
+                text-align right
+.bold 
+    font-weight bold
+
+h1
+    font-size 30px
+    margin 10px
+
+h2
+    font-size 24px
+    margin 10px 10px 20px
+
+.flex
+    display flex
+    align-items center
+    justify-content center
+
+.left_all
+    width 50%
+    float left
+    padding 10px
+
+.right_all 
+    width 50%
+    float right
+    padding 10px
+
+.left
+    @extend .left_all
+    @extend .flex
+    flex-direction column
+    height 262px
+
+.for_main li
+    margin 15px
+
+.right
+    @extend .right_all
+
+.right_container
+    padding 20px
+    border 1px solid #fff
+    background-color rgba(255, 255, 255,.8)
+
+h3
+    font-size 22px
+    margin 10px 0
+
+h4
+    font-size 18px
+    margin 10px 10px 20px
+
+form
+    max-width 80%
+    margin 10px auto
+    @extend .flex
+    flex-direction column
+    input
+        flex-direction column
+        max-width 80%
+        margin 10px
+
+// Стили Second
+.second_left
+    @extend .left_all
+
+.second_right
+    @extend .right_all
+
+// Стили Third
+
+.three_col
+    display flex
+    justify-content center
+    align-items start
+
+.col_left
+.col_mid
+.col_right
+    width 33%
+    padding 10px
+
+// Стили Fourth
+
+figure
+    @extend .flex
+    flex-direction row
+    
+    img
+        max-width 200px
+        max-height 200px
+        flex-direction column
+        flex-grow 1
+        border-radius 50%
+    figcaption
+        flex-grow 2
+        padding 0 20px
+        
+// Стили Footer
+footer
+    text-align center
+    background-color rgba(#000 .45)
+    color #fff
+    padding 10px 0
+    .container
+        margin 0 auto
