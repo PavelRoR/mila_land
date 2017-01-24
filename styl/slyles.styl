@@ -1,3 +1,5 @@
+main_color = #EDEACE
+
 @font-face
     font-family 'RobotoLight'
     src url(/fonts/Roboto/RobotoLight.eot)
@@ -79,12 +81,12 @@ h3
 h4 
     font-family 'SegoeBlack', san-serif
     text-align center
-    
+     
 .container
-.main_container
     max-width 960px
     min-width 280px
     margin 10px auto
+    
 
 .clf
     clear both
@@ -96,27 +98,49 @@ li
 .third
 .fourth
     margin 40px 0
+    padding 20px 0
 
 .button
     display block
     margin 30px auto 20px
 // Стили Main
 .header
+    background-color rgba(#000, .5)
+    color #fff
     .container
+        margin 0 auto
+        padding 10px 0
         img
             float left
             max-height 59px
             max-width 195px
+            margin 3px 0
         ul
             float right
             li
                 text-align right
+                padding 3px 0
+.main
+    background-image url('http://www.storania.com/wp-content/uploads/2015/09/business-plan.jpg')
+    background-position top center
+    background-attachment fixed
+    background-size cover
+    background-repeat no-repeat
+    padding-bottom 30px
 .bold 
     font-weight bold
+    border-bottom 1px dashed
+    
+.main_container
+    max-width 960px
+    min-width 280px
+    margin 30px auto 0
+    border 1px solid #fff
+    background-color rgba(255,255,255,.95)
 
 h1
     font-size 30px
-    margin 10px
+    padding 10px
 
 h2
     font-size 24px
@@ -142,17 +166,20 @@ h2
     @extend .flex
     flex-direction column
     height 262px
+    width 60%
 
 .for_main li
     margin 15px
 
 .right
     @extend .right_all
+    width 40%
 
 .right_container
-    padding 20px
-    border 1px solid #fff
-    background-color rgba(255, 255, 255,.8)
+    border 10px dashed rgb(187,153,0)
+    background-color rgba(245,200,0,1)
+    padding 10px
+    box-shadow 0 0 5px rgb(187,153,0)
 
 h3
     font-size 22px
@@ -169,8 +196,18 @@ form
     flex-direction column
     input
         flex-direction column
-        max-width 80%
-        margin 10px
+        width: 100%;
+        margin: 10px;
+        height: 35px;
+        border-style: solid;
+        border-color: transparent;
+        border-bottom: 2px solid brown;
+        background-color: transparent;
+        color: #fff;
+        font-size: 18px;
+        font-style: italic;
+        &[type="submit"]
+            background-color red
 
 // Стили Second
 .second_left
@@ -180,7 +217,8 @@ form
     @extend .right_all
 
 // Стили Third
-
+.third
+    background-color rgba(main_color .35)
 .three_col
     display flex
     justify-content center
