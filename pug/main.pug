@@ -2,7 +2,7 @@
 section.main
 	header.header
 		.container
-			img(src="/img/logo.png")
+			img(src="img/logo.png")
 			ul
 				li #[span.bold Телефон:] 8-926-186-98-89
 				li #[span.bold Время для звонков:] с 12 до 20ч
@@ -13,14 +13,10 @@ section.main
 			h1 Прогнозирование и нахождение прибыльных стратегий для вашего дела
 			h2 Вводная индивидуальная консультация без оплаты
 		.left
-			+list_o('Вы узнаете причины, которые мешают развитию вашего дела', 'Вы примите однозначное и точное решение  по актуальной для вас теме', 'Увидите\\услышите\\почувствуете(узнаете)')(class="for_main")
+			+list_u('Вы узнаете причины, которые мешают развитию вашего дела', 'Вы примите однозначное и точное решение  по актуальной для вас теме', 'Увидите\\услышите\\почувствуете (узнаете)')(class="for_main",)
 		.right
 			.right_container
 				h4 Плюшка, чтоб охотней вводили контакты
-				form(action="" method="POST")
-					input(type="text" name="name" placeholder="Введите Ваше имя" required) 
-					input(type="email" name="mail" placeholder="Введите Ваш e-mail" required) 
-					input(type="text" name="skype" placeholder="Введите Ваш Skype" required) 
-					input(type="submit" name="submit" value="Пройти консультацию")
+				include _form
 		.clf
 // Конец главного экрана
