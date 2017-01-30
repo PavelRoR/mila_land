@@ -2,18 +2,18 @@ main_color = #EDEACE
 
 @font-face
     font-family 'RobotoLight'
-    src url(/fonts/Roboto/RobotoLight.eot)
-    src url(/fonts/Roboto/RobotoLight.svg)
-    src url(/fonts/Roboto/RobotoLight.ttf)
-    src url(/fonts/Roboto/RobotoLight.woff)
-    src url(/fonts/Roboto/RobotoLight.woff2)
+    src url(../fonts/Roboto/RobotoLight.eot)
+    src url(../fonts/Roboto/RobotoLight.svg)
+    src url(../fonts/Roboto/RobotoLight.ttf)
+    src url(../fonts/Roboto/RobotoLight.woff)
+    src url(../fonts/Roboto/RobotoLight.woff2)
 @font-face 
     font-family 'SegoeBlack'
-    src url(/fonts/SegoeBlack/SegoeBlack.eot)
-    src url(/fonts/SegoeBlack/SegoeBlack.svg)
-    src url(/fonts/SegoeBlack/SegoeBlack.ttf)
-    src url(/fonts/SegoeBlack/SegoeBlack.woff)
-    src url(/fonts/SegoeBlack/SegoeBlack.woff2)
+    src url(../fonts/SegoeBlack/SegoeBlack.eot)
+    src url(../fonts/SegoeBlack/SegoeBlack.svg)
+    src url(../fonts/SegoeBlack/SegoeBlack.ttf)
+    src url(../fonts/SegoeBlack/SegoeBlack.woff)
+    src url(../fonts/SegoeBlack/SegoeBlack.woff2)
 
 html
 body
@@ -71,6 +71,9 @@ body
     margin 0
     padding 0
 
+a    
+    outline none
+
 
 *before
 *after 
@@ -98,6 +101,7 @@ li
 .second
 .third
 .fourth
+.fifth
     margin 40px 0
     padding 20px 0
 
@@ -350,6 +354,7 @@ form
     box-shadow 0 0 0 3px #b80900
 // Стили Third
 .third
+.fifth
     background-color rgba(main_color .35)
 #client
     border-bottom 1px dashed
@@ -454,7 +459,77 @@ form
     font-weight bold
 #exp
     font-weight: bold
+
+//- Стили Контактов
+.fifth 
+    margin-bottom 0
     
+.contacts_col_left
+.contacts_col_right
+    width 25%
+    
+.contacts_col_left
+    margin-right 10px
+    ul 
+        li 
+            text-align left
+            padding 10px 0
+            line-height 22px
+    a
+        font-weight bold
+        color #0000A3
+        text-decoration none
+        &:hover
+            border-bottom 1px dotted
+.fa-vk
+    width 25px
+    height 25px
+    vertical-align middle
+    text-align center
+    color #fff
+    background-color #597DA3
+    padding-top 6px
+    border-radius 5px
+
+.fa-facebook
+    @extend .fa-vk
+    background-color #4862A3
+
+.fa-map-marker
+    @extend .fa-vk
+    background-color #CC2E35
+    
+.contacts_col_right
+    margin-left 10px
+    ul
+        li
+            text-align right
+            padding 10px 0
+            line-height 22px
+
+.contacts_col_mid
+    width 50%
+    margin 10px
+
+.map
+    box-sizing border-box
+    border 3px solid #fff
+    position relative
+    &:before
+    &:after
+        position absolute
+        content ''
+        top 45px
+        background-color rgba(#000, .4)
+        box-shadow 0 0 45px rgba(#000, .7)
+        border-radius 50%
+        height 80%
+        width 100px
+        z-index -1
+    &:before
+        left 0
+    &:after
+        right 0
         
 // Стили Footer
 footer
@@ -465,6 +540,7 @@ footer
     .container
         margin 0 auto
         a
+            @extend .contacts_col_left a
             &:after
                 content '﹥'
 .layout
@@ -498,3 +574,11 @@ footer
     cursor pointer
     text-align center
     padding 5px
+    
+#politics
+    padding 8px 0 5px
+    display inline-block
+    color #ca0000
+    text-align center
+    font-size 12px
+    text-decoration none
