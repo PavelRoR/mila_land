@@ -2,21 +2,21 @@
 section.main
 	header.header
 		.container
-			img(src="img/logo.png")
+			img(src="img/logo.png" alt="Логотип")
 			ul
-				li #[span.bold #[.fa.fa-phone(aria-hidden="true")] Телефон:] 8-926-186-98-89
-				li #[span.bold #[.fa.fa-clock-o(aria-hidden="true")] Время для обращений (только смс):] с 12 до 20ч
-				li #[span.bold #[.fa.fa-calendar(aria-hidden="true")] Дни недели:] вторник\четверг\суббота
+				li #[span.bold #[span.fa.fa-phone(aria-hidden="true")] Телефон:] 8-926-186-98-89
+				li #[span.bold #[span.fa.fa-clock-o(aria-hidden="true")] Время для обращений (только смс):] с 12 до 20ч
+				li #[span.bold #[span.fa.fa-calendar(aria-hidden="true")] Дни недели:] вторник\четверг\суббота
 			.clf
 	.main_container
-		hgroup
+		#hgroup
 			h1 Прогнозирование и нахождение прибыльных стратегий для вашего дела
 			h2 Вводная индивидуальная консультация без оплаты
 		.left
 			+list_u('Вы узнаете причины, которые мешают развитию вашего дела', 'Вы примите однозначное и точное решение  по актуальной для вас теме', 'Увидите\\услышите\\почувствуете (узнаете)')(class="for_main",)
 		.right
 			.right_container
-				h4 Плюшка, чтоб охотней вводили контакты
+				h4 ПРИМИТЕ решение найти прибыльную стратегию прямо сейчас
 				include _form
 		.clf
 // Конец главного экрана
