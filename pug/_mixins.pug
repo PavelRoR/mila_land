@@ -10,3 +10,9 @@ mixin list_o(...items)
 	ol&attributes(attributes)
 		each item in items
 			li= item
+
+mixin slides(imageName, altName, caption)
+	div
+		img(src= imageName alt= altName)
+		.caption
+			p= caption			

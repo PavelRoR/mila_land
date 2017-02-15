@@ -1,0 +1,8 @@
+CACHE MANIFEST
+# Версия 1.0
+
+CACHE:
+css/*.css
+js/*.js
+img/*.png
+img/*.jpg

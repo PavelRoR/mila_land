@@ -462,6 +462,7 @@ form
 // Стили Fourth
 .fourth
     padding-top 0
+    padding-bottom 0
     h3
         margin-bottom 20px
 
@@ -484,6 +485,107 @@ form
     font-weight bold
 #exp
     font-weight: bold
+
+//- Стили слайдера 
+.certs .container
+    max-width 43%
+    position relative
+    z-index 0
+
+#example 
+    width 600px
+    height 350px
+    position relative
+    margin-top: 40px
+
+#frame 
+    position absolute
+    z-index 0
+    width:739px
+    height 341px
+    top -3px
+    left -80px
+
+#slides 
+    position absolute
+    top 15px
+    left 4px
+    z-index 100
+
+
+#slides .next
+#slides .prev 
+    position absolute
+    top 107px
+    left -39px
+    width 24px
+    height 43px
+    display block
+    z-index 101
+
+#slides .prev
+    background-image url(../img/arrow-prev.png)
+#slides .next
+    background-image url(../img/arrow-next.png)
+
+.slides_container 
+    width 570px
+    height 270px
+    overflow hidden
+    position relative
+
+
+#slides .next 
+    left 585px
+
+.pagination 
+    margin 26px auto 0
+    width 240px
+
+
+.pagination li 
+    float left
+    margin 0 1px
+
+
+.pagination li a 
+    display block
+    width 12px
+    height 0
+    padding-top 12px
+    background-image url(../img/pagination.png)
+    background-position 0 0
+    float left
+    overflow hidden
+
+
+.pagination li.current a 
+    background-position 0 -12px
+
+
+.caption 
+    position absolute
+    bottom -35px
+    height 40px
+    padding 5px 20px 0 20px
+    background #000
+    background rgba(0,0,0,.5)
+    width 100%
+    font-size 1.3em
+    line-height 1.33
+    color #fff
+    border-top 1px solid #000
+    text-shadow none
+
+.prev img
+.next img
+    width 24px
+    height 43px
+
+
+
+
+
 
 //- Стили Контактов
 .fifth 
