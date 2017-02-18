@@ -8,6 +8,8 @@
 	
 	.submit.l_box
 		width 40%
+	.submit::before
+		left -345px
 
 @media screen and (max-width: 1235px)
 	.submit
@@ -61,7 +63,11 @@
 		
 	.submit::before
 		left -375px
-
+		
+	.slick-next
+	.slick-prev
+		margin-top -45px
+		
 @media screen and (max-width: 760px)
 	.left
 	.right
@@ -110,10 +116,26 @@
 	
 	.submit.l_box
 		width 60%
+	.slides_container
+		height 295px
 
-@media screen and (max-width: 640px)
-	
+	.caption
+		bottom 35px
+		height 35px
+		font-size 1em
+		padding 5px
 
+	.slick-slide
+		max-height 230px
+		
+	.slider-item img
+		margin-top 15px
+
+	.slick-next
+	.slick-prev
+		top 42%
+		width 9.5%
+		
 @media screen and (max-width: 480px)
 	.second
 		padding-top 0
@@ -146,6 +168,18 @@
 	.col_right
 		width 75%
 		flex-grow 1
+	.slides_container
+		height 215px
+		
+	.slick-next
+	.slick-prev
+		top 50%
+		
+	.slider-item img
+		margin-top 10px
+		
+	.slick-slide
+		max-height 165px
 		
 @media screen and (max-width: 470px)
 	.header .container img
@@ -172,7 +206,24 @@
 	
 	.fourth figure
 		flex-direction column
+		
+	.caption
+		bottom 30px
+		height 30px
+		font-size 1em
+		font-size 0.8em
+		padding 0px 5px
+		line-height 1
 
+	.slick-slide 
+		max-height 140px
+
+	.slider-item img
+		margin-top 6px
+	.slick-next
+	.slick-prev
+		top 42%
+		
 @media screen and (max-width: 360px)
 	h1
 		font-size 22px
@@ -189,7 +240,31 @@
 	form input
 		font-size 16px
 		
+	.slides_container
+		height 175px
+
+	.slick-next
+	.slick-prev
+		top 50%
+	
+	.slick-slide
+		max-height 120px
+	
+	.slider-item img
+		margin-top 6px
+		
+	.caption
+		font-size .8em
+
 @media screen and (max-width: 320px)
 	h1
 		word-wrap break-word
 		
+	.slides_container 
+		height 160px
+		
+	.caption
+		font-size: 0.7em;
+
+	.slick-dots
+		margin-top 20px

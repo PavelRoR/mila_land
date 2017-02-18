@@ -12,7 +12,6 @@ mixin list_o(...items)
 			li= item
 
 mixin slides(imageName, altName, caption)
-	div
+	.slider-item
 		img(src= imageName alt= altName)
-		.caption
-			p= caption			
+		p.caption= caption
